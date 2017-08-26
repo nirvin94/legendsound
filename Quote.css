@@ -1,0 +1,132 @@
+@charset "UTF-8";
+/* CSS Document */
+.quote {
+	z-index: 2;
+	position: fixed;
+	bottom: 0;
+	right: 5%;
+	width: 20em;
+	height:	75%
+}
+
+#quote-tab {
+	width: 100%;
+	height: 2em;
+	background: rgba(255,245,218,1);
+	position: absolute;
+	bottom: 0;
+	border-top-left-radius: .6em;
+	border-top-right-radius: .6em;
+	z-index: 3;
+	font-family: Oswald, sans-serif;
+	font-size: 1.5em;
+	text-align: center;
+	color: rgb(55,60,60);
+	padding-top: .4em;
+	cursor: pointer;
+	opacity: .8;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+    user-select: none;
+	transition: font-size .55s,
+				height .55s,
+				opacity 0.55s;
+	
+}
+
+#quote-tab:hover {
+	font-size: 1.6em;
+	opacity: 1;
+	
+}
+
+#quote-body {
+	position: absolute;
+	max-height: 30em;
+	width: 100%;
+	background: rgb(55,60,60);
+	bottom: 3em;
+	overflow: scroll;
+	padding: 1em;
+	color: #fff;
+	font-family: Oswald, sans-serif; 
+	z-index: 2;
+	display:none;
+}
+
+#fname, #lname, #email {
+	height: 1.5em;
+	position: absolute;
+	right: 9em;
+	margin-left: .5em;
+	
+	
+}
+
+#tracking-details, #editing-details, #mixing-details, #mastering-details {
+	display: none;
+}
+
+
+.tracking input:checked ~ #tracking-details {
+	display: block;
+}
+
+.editing input:checked ~ #editing-details {
+	display: block;
+}
+
+.mixing input:checked ~ #mixing-details {
+	display: block;
+}
+
+.mastering input:checked ~ #mastering-details {
+	display: block;
+}
+
+#length1, #length2, #length3, #length4 {
+	width: 3em;	
+}
+
+#tracks1, #tracks2, #tracks3, #songs1, #songs2, #songs3, #songs4, #drums1, #drums2, #drums3, #length1, #length2, #length3, #length4 {
+	border: 1px solid #aaa;
+	height: 1.5em;
+	position: absolute;
+	left: 22em;
+	padding-left: 0.5em;
+	margin: 0.5em;
+}
+
+ 
+
+input[type=submit] {
+	background-color: #202020;
+	color: #fff;
+	width: 7em;
+	height: 2em;
+	border-radius: 8px;
+	border: none;
+	font-size: .8em;
+	cursor: pointer;
+	transition: all 0.5s;
+	overflow: hide;
+	text-align: center;
+	margin: 1em 0;
+}
+
+input[type=submit]:hover {
+	color: rgba(255,245,218,1.00);
+	background-color: #000;
+	padding-left: 25px;
+}
+
+@media only screen and (max-width: 480px) {
+	.quote {
+		width: 100%;
+		height: 100%;
+		right: 0;
+	}
+	#quote-body {
+		max-height: 80%
+	}
+}
