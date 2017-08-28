@@ -233,7 +233,7 @@ h4 {
     background-size: cover;
     background-position: bottom;
     background-attachment: fixed;
-    height: 255%;
+    height: 265%;
     width: 100%;
 
 }
@@ -265,7 +265,6 @@ hr {
 	width: 75%;
 	margin-left: 12.5%;
 	padding-top: 25%;
-  padding-bottom: 60px;
 }
 
 @media only screen and (max-width : 800px) and (orientation : landscape) {
